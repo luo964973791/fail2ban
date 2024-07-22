@@ -10,14 +10,14 @@ logpath = /var/log/messages
 maxretry = 3
 bantime = 3600
 
-[nginx-http-auth]
-enabled = true
-port = http,https
-filter = nginx-http-auth
-logpath = /var/log/nginx/access.log
-maxretry = 100
-findtime = 60
-bantime = 3600
+#[nginx-http-auth]
+#enabled = true
+#port = http,https
+#filter = nginx-http-auth
+#logpath = /var/log/nginx/access.log
+#maxretry = 100
+#findtime = 60
+#bantime = 3600
 EOF
 
 docker run -d --name fail2ban \
